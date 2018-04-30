@@ -28,6 +28,7 @@ def main(filename):
 
     # compute word count from all_words
     counter = Counter(all_words)
+    counter = counter.most_common()
 
     # dump to a csv file named "wordcount.csv":
     # word,count
